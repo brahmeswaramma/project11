@@ -1,0 +1,171 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+</style>
+<link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+<body>
+    <center>
+       <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary w-100px">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      data-mdb-collapse-init
+      class="navbar-toggler"
+      type="button"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+          height="15"
+         
+          loading="lazy"
+        />
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg-primary w-100 text-color-white">
+        <li class="nav-item">
+          <a class="nav-link" href="one">Einstein</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="two">Charles Darwin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="three">Physics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="four">Newton</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="five">CV Raman</a>
+        </li>
+       
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+    <!-- Right elements -->
+    <div class="d-flex align-items-center">
+      <!-- Icon -->
+      <a class="text-reset me-3" href="#">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+
+      
+    <!-- Right elements -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+    </center>
+     <center>
+      <div class="row row-cols-1 row-cols-md-5 g-15 bg-secondary ">
+      <div class="col" class="one">
+        <div class="card h-100">
+          <img src="{% static 'images/einstein.jpg' %}" class="card-img-top" alt="Skyscrapers"/>
+          <div class="card-body">
+            <h5 class="card-title">Einstein</h5>
+            <p class="card-text">
+              Albert Einstein, (born March 14, 1879, Ulm, Württemberg, Germany—died April 18, 1955, Princeton,
+               New Jersey, U.S.), German-born physicist who developed the special and general theories of relativity and
+               won the Nobel Prize for Physics in 1921 for his explanation of the photoelectric effect.
+            </p>
+          </div>
+          <div class="card-footer  bg-danger">
+            <small class="text-muted">Learn More</small>
+          </div>
+        </div>
+      </div>
+      <div class="col" class="two">
+        <div class="card h-100">
+          <img src="{% static 'images/CH darwin.jpg' %}" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+          <div class="card-body">
+            <h5 class="card-title">Charles Darwin</h5>
+            <p class="card-text">The theory of natural selection was explored by 19th-century naturalist Charles Darwin.
+               Natural selection explains how genetic traits of a species may change over time. This may lead to speciation, 
+               the formation of a distinct new species.
+              .</p>
+          </div>
+          <div class="card-footer bg-success text-light">
+            <small class="text-muted text-light">Learn More</small>
+          </div>
+        </div>
+      </div>      
+    
+      <div class="col">
+        <div class="card h-100" class="three">
+          <img src="{% static 'images/physics.jpg' %}" class="card-img-top" alt="Palm Springs Road"/>
+          <div class="card-body">
+            <h5 class="card-title">Physics</h5>
+            <p class="card-text">
+              Newton's Cradle is commonly used to demonstrate the law of energy and momentum conservation.
+               It consists of swinging spherical bobs which transfers energy from one to another by means
+                of elastic collisions. From the video analysis, it is found that there is a difference in the
+                 velocity of the two bobs of opposite ends.
+            </p>
+          </div>
+          <div class="card-footer bg-warning">
+            <small class="text-muted">Learn More</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" class="three">
+          <img src="{% static 'images/newton.jpg' %}" class="card-img-top" alt="Palm Springs Road"/>
+          <div class="card-body">
+            <h5 class="card-title ">Newton</h5>
+            <p class="card-text">
+              Newton's Cradle is commonly used to demonstrate the law of energy and momentum conservation.
+               It consists of swinging spherical bobs which transfers energy from one to another by means
+                of elastic collisions. From the video analysis, it is found that there is a difference in the
+                 velocity of the two bobs of opposite ends.
+            </p>
+          </div>
+          <div class="card-footer bg-primary">
+            <small class="text-muted">Learn More</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" class="three">
+          <img src="{% static 'images/raman.jpg' %}" class="card-img-top" alt="Palm Springs Road"/>
+          <div class="card-body">
+            <h5 class="card-title">CV Raman</h5>
+            <p class="card-text">
+              Newton's Cradle is commonly used to demonstrate the law of energy and momentum conservation.
+               It consists of swinging spherical bobs which transfers energy from one to another by means
+                of elastic collisions. From the video analysis, it is found that there is a difference in the
+                 velocity of the two bobs of opposite ends.
+            </p>
+          </div>
+          <div class="card-footer bg-danger">
+            <small class="text-muted">Learn More</small>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+     <div class="footer mb-80"></div>
+      <script src="{% static 'js/mdb.es.min.js' %}"></script>
+</body>
+</html>
